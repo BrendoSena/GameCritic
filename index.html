@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Game Critic</title>
+	<link rel="stylesheet" type="text/css" href="estilo.css">
+	<link rel="icon" href="imagens/logo.png">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&display=swap" rel="stylesheet">
+	<script src="https://kit.fontawesome.com/9617228131.js" crossorigin="anonymous"></script>
+</head>
+<body>
+	<header>
+		<div class="containerHead">
+			<div class="logo">
+				<button onclick="menuToggle()" id="menu-button">&#9776;</button>
+				<a href="#index.html" title="Game Critic">
+					<img src="imagens/logo.png">	
+				</a>
+				<a class="linkLogo" href="#index.html">
+					game Critic
+				</a>
+			</div>
+			<div class="pesquisa">
+				<input onblur="placeOff()" onfocus="place()" id="pesquisa" class="inputSearch" type="text" placeholder="PROCURAR JOGO">
+				<button type="submit" title="Procurar Jogo" class="btnPesquisa"><i class="fa-solid fa-magnifying-glass" style="color: grey; font-size: 20px;"></i></button>
+			</div>
+			<div class="navegacaoHeader" id="menu">
+				<ul>
+					<li><a href="#">Catálogo</a></li>
+					<li><a href="#">Lançamentos</a></li>
+					<li><a href="#">Coleções</a></li>
+					<li><a href="#">Atividades</a></li>
+				</ul>
+			</div>
+			<div class="login">
+				<a href="#"><i class="fa-regular fa-user"></i></a>
+			</div>
+		</div>
+	</header>
+	<section id="menuHidden" class="menu-mobile">
+		<div class="container-menu-mobile">
+			<ul>
+				<li><a href="#">Catálogo</a></li>
+				<li><a href="#">Lançamentos</a></li>
+				<li><a href="#">Coleções</a></li>
+				<li><a href="#">Atividades</a></li>
+			</ul>
+		</div>
+	</section>
+	<main id="main">
+		<section class="catalogoList">
+			<div class="list">
+				<ul>
+					<li><a href="#">A-Z</a></li>
+					<li><a href="#">Lançamentos</a></li>
+					<li><a href="#">Xbox Series</a></li>
+					<li><a href="#">Xbox One</a></li>
+					<li><a href="#">PS5</a></li>
+					<li><a href="#">Switch</a></li>
+					<li><a href="#">PS4</a></li>
+				</ul>
+			</div>
+		</section>
+		<section class="jogosEmAlta">
+			<div class="containerJogosEmAlta">	
+				<div class="titulo">
+					<a href="#">Jogos em alta</a>
+				</div>
+				<div class="conteudoJogos">
+					
+				</div>
+			</div>
+		</section>
+	</main>
+
+
+<script src="logica.js"></script>
+</body>
+</html>
