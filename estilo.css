@@ -40,7 +40,65 @@ a {
 	}
 }
 
+@media (max-width:1265px) and (min-width: 1130px){
+	div.contGameImg img {
+		width: 207px;
+		height: 270px;
+	}
+
+	div.contGame {
+		display: flex;
+		flex-direction: column;
+		justify-content: end;
+	}
+
+	div.containerJogosEmAlta {
+		width: 100%;
+	}
+
+	div.conteudoJogos {
+		gap: 0px;
+	}
+
+	div.conteudoJogos2 {
+		gap: 0px;
+	}
+
+	div.conteudoJogos3 {
+		gap: 0px;
+	}
+
+}
+
 @media (max-width:1129px) and (min-width: 900px){
+	div.contGameImg img {
+		width: 207px;
+		height: 270px;
+	}
+
+	div.contGame img.img1 {
+		margin-left: 150px;
+	}
+
+	div.image1 {
+		margin-left: 75px;
+	} 
+
+	div.contGame {
+		display: flex;
+		flex-direction: column;
+		justify-content: end;
+	}
+
+	div.containerJogosEmAlta {
+		width: 98%;
+	}
+
+	div.conteudoJogos, div.conteudoJogos2, div.conteudoJogos3, div.conteudoJogos4 {
+		gap: 0px;
+		overflow: hidden;
+	}
+
 	div.logo a img {
 		display: none;
 	}
@@ -64,6 +122,37 @@ a {
 }
 
 @media (max-width:899px) and (min-width: 800px){
+	div.contGameImg img {
+		width: 207px;
+		height: 270px;
+	}
+
+	div.contGame img.img1 {
+		margin-left: 280px;
+	}
+
+	div.image1 {
+		margin-left: 145px;
+	} 
+
+	#dsp {
+		display: flex;
+	}
+
+	div.contGame {
+		display: flex;
+		flex-direction: column;
+		justify-content: end;
+	}
+
+	div.containerJogosEmAlta {
+		width: 98%;
+	}
+
+	div.conteudoJogos, div.conteudoJogos2, div.conteudoJogos3, div.conteudoJogos4 {
+		gap: 0px;
+	}
+
 	div.logo a img {
 		display: none;
 	}
@@ -86,7 +175,45 @@ a {
 	}
 }
 
-@media (max-width:799px) and (min-width:550px){
+@media (max-width:799px) and (min-width:621px){
+	div.contGame img.img1 {
+		margin-left: 250px;
+	}
+
+	div.image1 {
+		margin-left: 125px;
+	} 
+
+	div.contGameImg img {
+		width: 207px;
+		height: 270px;
+	}
+
+	#dsp {
+		display: flex;
+	}
+
+	div.contGame {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+	}
+
+	div.botaoCarrousel {
+		display: none;
+	}
+
+	div.containerJogosEmAlta {
+		width: 95%;
+		display: flex;
+		justify-content: start;
+		align-items: start;
+	}
+
+	div.conteudoJogos, div.conteudoJogos2, div.conteudoJogos3, div.conteudoJogos4 {
+		gap: 0px;
+	}
+
 	div.logo a img {
 		display: none;
 	}
@@ -94,7 +221,7 @@ a {
 	div.list a {
 		padding: 6px 15px;
 		color: #262626;
-		font-size: 0.9em;
+		font-size: 1.1em;
 		background-color: #636363;
 		border-radius: 20px;
 	}
@@ -117,51 +244,79 @@ a {
 	}
 
 	div.logo {
-		gap: 10px;
+		gap: 15px;
 	}
 }
 
-@media (max-width:549px) and (min-width:400px){
-
-	div.list a {
-		padding: 6px 15px;
-		color: #262626;
-		font-size: 0.8em;
-		background-color: #636363;
-		border-radius: 20px;
+@media (max-width:620px) and (min-width:481px){
+	div.contGame img.img1 {
+		margin-left: 640px;
+	}
+	div.image1 {
+		margin-left: 320px;
 	}
 
-	div.logo a img {
+	div.pesquisaMb {
+		display: flex;
+		width: 95%;
+		height: 83%;
+	}
+
+	div.botaoCarrousel {
 		display: none;
 	}
 
-	div.pesquisa button {
-		width: 40px;
+	div.pesquisaMb input {
+		width: 85%;
+		height: 77%;
+		background: #151517;
+		border: 1px solid black;
+		border-radius: 5px 0px 0px 5px;
+		font-size: 1.2em;
+		text-transform: uppercase;
+		color: #7D7C7C;
 	}
 
-	div.logo .linkLogo {
-		display: none;
+	div.pesquisaMb input::placeholder {
+		opacity: 50%;
 	}
 
-	div.logo button {
+	.pesquisaMb input::placeholder {
+		color: #7D7C7C;
+		padding-left: 10px;
+	}
+
+	.pesquisaMb input:focus {
+		box-shadow: 0 0 0 0;
+		outline: 0;
+	}
+	.pesquisaMb button {
+		height: 83%;
+		border: 1px solid black;
+		border-radius: 0px 5px 5px 0px;
+		width: 15%;
+		background: #151517;
+		cursor: pointer;
+	}
+
+	li.loginMobile{
 		display: block;
 	}
 
-	div.navegacaoHeader {
+	div.login {
 		display: none;
 	}
 
-	div.containerHead {
-		grid-template-columns: 15% 75% 10%;
-		grid-template-areas: "logo pesquisa login";
+	section.catalogoList {
+		display: flex;
+		justify-content: center;
+		align-items: center;
 	}
 
-	div.logo {
-		gap: 10px;
+	div.list {
+		display: none;
 	}
-}
 
-@media (max-width:399px){
 	div.list a {
 		padding: 6px 15px;
 		color: #262626;
@@ -177,12 +332,20 @@ a {
 	div.logo a img {
 		display: none;
 	}
+
 	div.pesquisa button {
-		width: 40px;
+		height: 35px;
+		width: 45px;
+		border-radius: 5px;
+		background-color: #232323;
+		color: #696969;
+		border: 1px solid black;
+		cursor: pointer;
+		display: none;
 	}
 
 	div.logo .linkLogo {
-		display: none;
+		display: block;
 	}
 
 	div.logo button {
@@ -194,17 +357,299 @@ a {
 	}
 
 	div.containerHead {
-		grid-template-columns: 16% 70% 15%;
-		grid-template-areas: "logo pesquisa login";
+		grid-template-columns: 85% 15%;
+		grid-template-areas: "logo  pesquisa";
 	}
 
 	div.logo {
-		gap: 10px;
+		margin-left: 10%;
+		display: flex;
+		gap: 9%;
+	}
+
+	div.containerHead {
+		display: flex;
+	}
+
+	div.pesquisa input {
+		display: none;
 	}
 
 	div.pesquisa input::placeholder {
 		color: #7D7C7C;
 		padding-left: 0;
+	}
+}
+
+@media (max-width:480px) and (min-width:361px){
+
+	div.contGame img.img1 {
+		margin-left: 700px;
+	}
+
+	div.image1 {
+		margin-left: 350px;
+	}
+
+	div.pesquisaMb {
+		display: flex;
+		width: 95%;
+		height: 83%;
+	}
+
+	div.botaoCarrousel {
+		display: none;
+	}
+
+	div.pesquisaMb input {
+		width: 85%;
+		height: 77%;
+		background: #151517;
+		border: 1px solid black;
+		border-radius: 5px 0px 0px 5px;
+		font-size: 1.2em;
+		text-transform: uppercase;
+		color: #7D7C7C;
+	}
+
+	div.pesquisaMb input::placeholder {
+		opacity: 50%;
+	}
+
+	.pesquisaMb input::placeholder {
+		color: #7D7C7C;
+		padding-left: 10px;
+	}
+
+	.pesquisaMb input:focus {
+		box-shadow: 0 0 0 0;
+		outline: 0;
+	}
+	.pesquisaMb button {
+		height: 83%;
+		border: 1px solid black;
+		border-radius: 0px 5px 5px 0px;
+		width: 15%;
+		background: #151517;
+		cursor: pointer;
+	}
+
+	li.loginMobile{
+		display: block;
+	}
+
+	div.login {
+		display: none;
+	}
+
+	section.catalogoList {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	div.list {
+		display: none;
+	}
+
+	div.list a {
+		padding: 6px 15px;
+		color: #262626;
+		font-size: 0.8em;
+		background-color: #636363;
+		border-radius: 20px;
+	}
+
+	header .containerHead {
+		width: 98%;
+	}
+
+	div.logo a img {
+		display: none;
+	}
+
+	div.pesquisa button {
+		height: 35px;
+		width: 45px;
+		border-radius: 5px;
+		background-color: #232323;
+		color: #696969;
+		border: 1px solid black;
+		cursor: pointer;
+		display: none;
+	}
+
+	div.logo .linkLogo {
+		display: block;
+	}
+
+	div.logo button {
+		display: block;
+	}
+
+	div.navegacaoHeader {
+		display: none;
+	}
+
+	div.containerHead {
+		grid-template-columns: 85% 15%;
+		grid-template-areas: "logo  pesquisa";
+	}
+
+	div.logo {
+		margin-left: 10%;
+		display: flex;
+		gap: 10%;
+	}
+
+	div.containerHead {
+		display: flex;
+	}
+
+	div.pesquisa input {
+		display: none;
+	}
+
+	div.pesquisa input::placeholder {
+		color: #7D7C7C;
+		padding-left: 0;
+	}
+}
+
+@media (max-width:360px){
+	
+	div.contGame img.img1 {
+		margin-left: 780px;
+	}
+
+	div.image1 {
+		margin-left: 390px;
+	}
+
+	div.pesquisaMb {
+		display: flex;
+		justify-content: center;
+		width: 95%;
+		height: 83%;
+	}
+
+	div.botaoCarrousel {
+		display: none;
+	}
+
+	div.pesquisaMb input {
+		width: 80%;
+		height: 67%;
+		background: #151517;
+		border: 1px solid black;
+		border-radius: 5px 0px 0px 5px;
+		font-size: 1.2em;
+		text-transform: uppercase;
+		color: #7D7C7C;
+	}
+
+	div.pesquisaMb input::placeholder {
+		opacity: 50%;
+	}
+
+	.pesquisaMb input::placeholder {
+		color: #7D7C7C;
+		padding-left: 10px;
+	}
+
+	.pesquisaMb input:focus {
+		box-shadow: 0 0 0 0;
+		outline: 0;
+	}
+	.pesquisaMb button {
+		height: 74%;
+		border: 1px solid black;
+		border-radius: 0px 5px 5px 0px;
+		width: 15%;
+		background: #151517;
+		cursor: pointer;
+	}
+
+	li.loginMobile{
+		display: block;
+	}
+
+	div.login {
+		display: none;
+	}
+
+	section.catalogoList {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	div.list {
+		display: none;
+	}
+
+	div.list a {
+		padding: 6px 15px;
+		color: #262626;
+		font-size: 0.8em;
+		background-color: #636363;
+		border-radius: 20px;
+	}
+
+	header .containerHead {
+		width: 98%;
+	}
+
+	div.logo a img {
+		display: none;
+	}
+	div.pesquisa {
+		display: none;
+	}
+	div.pesquisa button {
+		height: 35px;
+		width: 45px;
+		border-radius: 5px;
+		background-color: #232323;
+		color: #696969;
+		border: 1px solid black;
+		cursor: pointer;
+	}
+
+
+	div.logo button {
+		display: block;
+		margin-left: 10px;
+	}
+
+	div.navegacaoHeader {
+		display: none;
+	}
+
+	div.containerHead {
+		grid-template-columns: 100% 20%;
+		grid-template-areas: "logo";
+	}
+
+	div.logo {
+		display: flex;
+		justify-content: space-evenly;
+		grid-area: logo;
+	}
+	div.pesquisa input {
+		display: none;
+	}
+
+	div.pesquisa input::placeholder {
+		color: #7D7C7C;
+		padding-left: 0;
+	}
+
+	div.logo .linkLogo {
+		width: 180px;
+		padding-right: 45px;
+		display: block;
+		font-size: 1.5em;
 	}
 }
 
@@ -372,6 +817,22 @@ input.pesquisaFocus::placeholder {
 
 /* menu mobile */
 
+.pesquisaMb {
+	display: none;
+}
+
+#pesquisaMobile {
+	display: none;
+}
+
+.loginMobile {
+	display: none;
+}
+
+.loginMobile i{
+	font-size: 1.4em;
+}
+
 .logo button {
 	display: none;
 	height: 35px;
@@ -422,7 +883,7 @@ input.pesquisaFocus::placeholder {
 	height: 100%;
 	width: 95%;
 	flex-direction: column;
-	justify-content: space-evenly;
+	justify-content: space-around;
 	align-items: center;
 	padding: 0px;
 }
@@ -464,7 +925,6 @@ input.pesquisaFocus::placeholder {
 
 .list ul {
 	display: flex;
-	flex-wrap: wrap;
 	padding: 0;
 	gap: 5px;
 	justify-content: space-evenly;
@@ -472,7 +932,7 @@ input.pesquisaFocus::placeholder {
 
 .list ul li {
 	display: flex;
-	flex-wrap: wrap;
+	text-align: center;
 	list-style: none;
 }
 
@@ -501,21 +961,150 @@ input.pesquisaFocus::placeholder {
 }
 
 .containerJogosEmAlta {
+	display: flex;
+	overflow: hidden;
+	gap: 10px;
+	align-items: center;
 	width: 95%;
 }
 
 .titulo a {
-	color: #020209;
+	color: #9B9B9B;
 	font-size: 2em;
 }
 
 .titulo a:hover {
-	color: #040419;
+	color: #6E6E6E;
 	transition: 0.2s;
 }
 
-.titulo i {
-	font-size: 0.7em;
+.conteudoJogos {
+	display: flex;
+	overflow: auto;
+	scroll-behavior: smooth;
+	justify-content: center;
+	gap: 30px;
+	align-items: center;
+	width: 100%;
+	height: 65vh;
+	transition: 0.4s;
+}
+
+.conteudoJogos2 {
+	display: none;
+	overflow: auto;
+	scroll-behavior: smooth;
+	justify-content: center;
+	gap: 30px;
+	align-items: center;
+	width: 100%;
+	height: 65vh;
+	transition: 0.4s;
+}
+
+.conteudoJogos3 {
+	display: none;
+	overflow: auto;
+	scroll-behavior: smooth;
+	justify-content: center;
+	gap: 30px;
+	align-items: center;
+	width: 100%;
+	height: 65vh;
+}
+
+.conteudoJogos4 {
+	display: none;
+	overflow: hidden;
+	scroll-behavior: smooth;
+	justify-content: center;
+	gap: 30px;
+	align-items: center;
+	width: 100%;
+	height: 65vh;
+}
+
+.contGame {
+	height: 100%;
+	display: flex;
+	flex: 0 0 250px;
+	flex-direction: column;
+	align-items: center;
+	border-radius: 6px;
+}
+
+.contGame a {
+	display: flex;
+	justify-content: center;
+}
+
+.contGameImg img {
+	width: 237px;
+	height: 293px;
+	margin-top: 10px;
+	border-radius: 8px;
+	box-shadow: 0px 1px 5px black;
+}
+
+.contGameImg {
+	display: flex;
+	flex-direction: column;
+}
+
+.contGameImg img:hover {
+	margin-top: 3px;
+	transition: 0.2s;
+}
+
+.infoGame {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	flex-direction: column;
+}
+
+.infoGame a{
+	color: #CACACA;
+	margin-top: 5px;
+	font-size: 1.2em;
+}
+
+.infoGame span {
+	opacity: 50%;
+	color: #CACACA;
+}
+
+.botaoCarrousel {
+	font-size: 1.2em;
+	width: 45px;
+	height: 45px;
+}
+
+.carroselBtn {
+	background-color: #343434;
+	border: 1px solid black;
+	border-radius: 50%;
+	font-size: 1.2em;
+	width: 45px;
+	height: 45px;
+	cursor: pointer;
+}
+
+.carroselBtn:hover {
+	background-color: #212121;
+	transition: 0.3s;
+}
+
+img.imgGame {
+	height: 98%;
+}
+
+.infoNota {
+	display: flex;
+	justify-content: right;
+	margin-right: 15px;
+	font-size: 0.8em;
 }
 
 /* fim sessão jogos em alta */

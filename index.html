@@ -43,6 +43,7 @@
 	<section id="menuHidden" class="menu-mobile">
 		<div class="container-menu-mobile">
 			<ul>
+				<li class="loginMobile"><a href="#"><i class="fa-regular fa-user"></i></a></li>
 				<li><a href="#">Catálogo</a></li>
 				<li><a href="#">Lançamentos</a></li>
 				<li><a href="#">Coleções</a></li>
@@ -52,6 +53,10 @@
 	</section>
 	<main id="main">
 		<section class="catalogoList">
+			<div class="pesquisaMb">
+				<input onblur="placeOff()" onfocus="place()" id="pesquisa" class="inputSearch" type="text" placeholder="PROCURAR JOGO">
+				<button type="submit" title="Procurar Jogo" class="btnPesquisa"><i class="fa-solid fa-magnifying-glass" style="color: grey; font-size: 20px;"></i></button>
+			</div>
 			<div class="list">
 				<ul>
 					<li><a href="#">A-Z</a></li>
@@ -65,12 +70,240 @@
 			</div>
 		</section>
 		<section class="jogosEmAlta">
+			<div class="titulo">
+				<a href="#">Jogos em alta</a>
+			</div>
 			<div class="containerJogosEmAlta">	
-				<div class="titulo">
-					<a href="#">Jogos em alta</a>
+				<div class="botaoCarrousel">
+					<button onclick="voltar()" class="carroselBtn prev"><i class="fa-solid fa-arrow-left"></i></button>
 				</div>
-				<div class="conteudoJogos">
+				<div class="conteudoJogos" id="contJogos0">
+					<div class="contGame">
+						<div class="contGameImg">
+							<a href="#">
+								<img class="img1" src="imagens/rdr2.jpg">
+							</a>
+							<div class="infoGame image1">
+								<a href="#">Red Dead Redemption 2</a>
+								<span>2018</span>
+							</div>
+							<div class="infoNota">
+								<i class="fa-solid fa-star" style="color: #e7d404;"> 9.8</i>
+							</div>
+						</div>
+					</div>
+					<div class="contGame">
+						<div class="contGameImg">
+							<a href="#">
+								<img src="imagens/re4r.jpg">
+							</a>
+							<div class="infoGame">
+								<a href="#">Resident Evil 4</a>
+								<span>2023</span>
+							</div>
+							<div class="infoNota">
+								<i class="fa-solid fa-star" style="color: #e7d404;"> 9.4</i>
+							</div>
+						</div>
+					</div>
+					<div class="contGame">
+						<div class="contGameImg">
+							<a href="#">
+								<img src="imagens/tlof2.jpeg">
+							</a>
+							<div class="infoGame">
+								<a href="#">The Last Of Us 2</a>
+								<span>2018</span>
+							</div>
+							<div class="infoNota">
+								<i class="fa-solid fa-star" style="color: #e7d404;"> 9.5</i>
+							</div>
+
+						</div>
+					</div>
+					<div class="contGame" id="dsp">
+						<div class="contGameImg">
+							<a href="#">
+								<img src="imagens/witcher3.jpg">
+							</a>
+							<div class="infoGame">
+								<a href="#">The Witcher 3</a>
+								<span>2018</span>
+							</div>
+							<div class="infoNota">
+								<i class="fa-solid fa-star" style="color: #e7d404;"> 9.8</i>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="conteudoJogos2" id="contJogos1">
 					
+					<div class="contGame">
+						<div class="contGameImg">
+							<a href="#">
+								<img src="imagens/re3r.jpg">
+							</a>
+							<div class="infoGame">
+								<a href="#">Silent Hill HD Coletion</a>
+								<span>2018</span>
+							</div>
+							<div class="infoNota">
+								<i class="fa-solid fa-star" style="color: #e7d404;"> 9.8</i>
+							</div>
+
+						</div>
+					</div>
+					<div class="contGame">
+						<div class="contGameImg">
+							<a href="#">
+								<img src="imagens/gtav.jpeg">
+							</a>
+							<div class="infoGame">
+								<a href="#">Grand Theft Auto V</a>
+								<span>2013</span>
+							</div>
+							<div class="infoNota">
+								<i class="fa-solid fa-star" style="color: #e7d404;"> 9.4</i>
+							</div>
+
+						</div>
+					</div>
+					<div class="contGame">
+						<div class="contGameImg">
+							<a href="#">
+								<img src="imagens/gow.jpg">
+							</a>
+							<div class="infoGame">
+								<a href="#">God Of War</a>
+								<span>2018</span>
+							</div>
+							<div class="infoNota">
+								<i class="fa-solid fa-star" style="color: #e7d404;"> 9.5</i>
+							</div>
+
+						</div>
+					</div>
+					<div class="contGame" id="dsp">
+						<div class="contGameImg">
+							<a href="#">
+								<img src="imagens/re2r.jpg">
+							</a>
+							<div class="infoGame">
+								<a href="#">Resident Evil 2 Remake</a>
+								<span>2018</span>
+							</div>
+							<div class="infoNota">
+								<i class="fa-solid fa-star" style="color: #e7d404;"> 9.8</i>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="conteudoJogos3" id="contJogos2">			
+					<div class="contGame">
+						<div class="contGameImg">
+							<a href="#">
+								<img src="imagens/detroit.jpg">
+							</a>
+							<div class="infoGame">
+								<a href="#">Detroit Become Human</a>
+								<span>2018</span>
+							</div>
+							<div class="infoNota">
+								<i class="fa-solid fa-star" style="color: #e7d404;"> 9.8</i>
+							</div>
+						</div>
+					</div>
+					<div class="contGame">
+						<div class="contGameImg">
+							<a href="#">
+								<img src="imagens/sotc.jpg" >
+							</a>
+							<div class="infoGame">
+								<a href="#">Shadow Of The Colossus</a>
+								<span>2023</span>
+							</div>
+							<div class="infoNota">
+								<i class="fa-solid fa-star" style="color: #e7d404;"> 9.4</i>
+							</div>
+
+						</div>
+					</div>
+					<div class="contGame">
+						<div class="contGameImg">
+							<a href="#">
+								<img src="imagens/hzd.png">
+							</a>
+							<div class="infoGame">
+								<a href="#">The Last Of Us 2</a>
+								<span>2018</span>
+							</div>
+							<div class="infoNota">
+								<i class="fa-solid fa-star" style="color: #e7d404;"> 9.5</i>
+							</div>
+
+						</div>
+					</div>
+					<div class="contGame" id="dsp">
+						<div class="contGameImg">
+							<a href="#">
+								<img src="imagens/er.jpg">
+							</a>
+							<div class="infoGame">
+								<a href="#">Elden Ring</a>
+								<span>2018</span>
+							</div>
+							<div class="infoNota">
+								<i class="fa-solid fa-star" style="color: #e7d404;"> 9.8</i>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="conteudoJogos4" id="contJogos3">
+					<div class="contGame">
+						<div class="contGameImg">
+							<a href="#">
+								<img src="imagens/er.jpg">
+							</a>
+							<div class="infoGame">
+								<a href="#">Elden Ring</a>
+								<span>2018</span>
+							</div>
+							<div class="infoNota">
+								<i class="fa-solid fa-star" style="color: #e7d404;"> 9.8</i>
+							</div>
+						</div>
+					</div>
+					<div class="contGame">
+						<div class="contGameImg">
+							<a href="#">
+								<img src="imagens/re2r.jpg">
+							</a>
+							<div class="infoGame">
+								<a href="#">Resident Evil 2 Remake</a>
+								<span>2018</span>
+							</div>
+							<div class="infoNota">
+								<i class="fa-solid fa-star" style="color: #e7d404;"> 9.8</i>
+							</div>
+						</div>
+					</div>
+					<div class="contGame">
+						<div class="contGameImg">
+							<a href="#">
+								<img src="imagens/witcher3.jpg">
+							</a>
+							<div class="infoGame">
+								<a href="#">The Witcher 3</a>
+								<span>2018</span>
+							</div>
+							<div class="infoNota">
+								<i class="fa-solid fa-star" style="color: #e7d404;"> 9.8</i>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="botaoCarrousel">
+					<button onclick="proximo()" class="carroselBtn next"><i class="fa-solid fa-arrow-right"></i></button>
 				</div>
 			</div>
 		</section>
