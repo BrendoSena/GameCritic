@@ -114,6 +114,13 @@ a {
 
 	div.conteudoJogos {
 		overflow: auto;
+		-webkit-overflow-scrolling: touch;
+		scrollbar-width: none;
+		-ms-overflow-style: none;
+	}
+
+	div.conteudoJogos::-webkit-scrollbar {
+		display: none;
 	}
 
 
@@ -173,6 +180,13 @@ a {
 
 	div.conteudoJogos {
 		overflow: auto;
+		-webkit-overflow-scrolling: touch;
+		scrollbar-width: none;
+		-ms-overflow-style: none;
+	}
+
+	div.conteudoJogos::-webkit-scrollbar {
+		display: none;
 	}
 
 	div.contGame {
@@ -234,6 +248,13 @@ a {
 	
 	div.conteudoJogos {
 		overflow: auto;
+		-webkit-overflow-scrolling: touch;
+		scrollbar-width: none;
+		-ms-overflow-style: none;
+	}
+
+	div.conteudoJogos::-webkit-scrollbar {
+		display: none;
 	}
 
 	div.contGame img.img1 {
@@ -377,6 +398,13 @@ a {
 
 	div.conteudoJogos {
 		overflow: auto;
+		-webkit-overflow-scrolling: touch;
+		scrollbar-width: none;
+		-ms-overflow-style: none;
+	}
+
+	div.conteudoJogos::-webkit-scrollbar {
+		display: none;
 	}
 
 	div.image1 {
@@ -516,6 +544,13 @@ a {
 
 	div.conteudoJogos {
 		overflow: auto;
+		-webkit-overflow-scrolling: touch;
+		scrollbar-width: none;
+		-ms-overflow-style: none;
+	}
+
+	div.conteudoJogos::-webkit-scrollbar {
+		display: none;
 	}
 
 	div.container-menu-mobile ul {
