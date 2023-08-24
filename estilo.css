@@ -18,6 +18,15 @@ a {
 
 @media (max-width:1200px) and (min-width:1130px) {
 	
+	div.reddead {
+		margin-left: 2600px;
+		transition: 1s;
+	}
+
+	div.conteudoJogos {
+		gap: 20px;
+	}
+
 	div.logo a img {
 		display: none;
 	}
@@ -40,54 +49,20 @@ a {
 	}
 }
 
-@media (max-width:1265px) and (min-width: 1130px){
-	div.contGameImg img {
-		width: 207px;
-		height: 270px;
-	}
-
-	div.contGame {
-		display: flex;
-		flex-direction: column;
-		justify-content: end;
-	}
-
-	div.containerJogosEmAlta {
-		width: 100%;
-	}
-
-	div.conteudoJogos {
-		gap: 0px;
-	}
-
-	div.conteudoJogos2 {
-		gap: 0px;
-	}
-
-	div.conteudoJogos3 {
-		gap: 0px;
-	}
-
-}
-
 @media (max-width:1129px) and (min-width: 900px){
 	div.contGameImg img {
 		width: 207px;
 		height: 270px;
 	}
 
-	div.contGame img.img1 {
-		margin-left: 150px;
+	div.reddead {
+		margin-left: 2100px;
+		transition: 1s;
 	}
-
-	div.image1 {
-		margin-left: 75px;
-	} 
 
 	div.contGame {
 		display: flex;
-		flex-direction: column;
-		justify-content: end;
+		flex-direction: column;	
 	}
 
 	div.containerJogosEmAlta {
@@ -127,17 +102,24 @@ a {
 		height: 270px;
 	}
 
-	div.contGame img.img1 {
-		margin-left: 280px;
+	div.reddead {
+		margin-left: 2400px;
+		transition: 1s;
 	}
 
-	div.image1 {
-		margin-left: 145px;
-	} 
-
-	#dsp {
+	div.contGame {
 		display: flex;
+		flex-direction: column;	
 	}
+
+	div.conteudoJogos {
+		overflow: auto;
+	}
+
+
+	div.botaoCarrousel {
+		display: none;
+	} 
 
 	div.contGame {
 		display: flex;
@@ -146,6 +128,7 @@ a {
 	}
 
 	div.containerJogosEmAlta {
+
 		width: 98%;
 	}
 
@@ -176,21 +159,20 @@ a {
 }
 
 @media (max-width:799px) and (min-width:621px){
-	div.contGame img.img1 {
-		margin-left: 250px;
-	}
 
-	div.image1 {
-		margin-left: 125px;
-	} 
 
 	div.contGameImg img {
 		width: 207px;
 		height: 270px;
 	}
 
-	#dsp {
-		display: flex;
+	div.reddead {
+		margin-left: 2600px;
+		transition: 1s;
+	}
+
+	div.conteudoJogos {
+		overflow: auto;
 	}
 
 	div.contGame {
@@ -249,9 +231,15 @@ a {
 }
 
 @media (max-width:620px) and (min-width:481px){
+	
+	div.conteudoJogos {
+		overflow: auto;
+	}
+
 	div.contGame img.img1 {
 		margin-left: 640px;
 	}
+
 	div.image1 {
 		margin-left: 320px;
 	}
@@ -387,6 +375,10 @@ a {
 		margin-left: 700px;
 	}
 
+	div.conteudoJogos {
+		overflow: auto;
+	}
+
 	div.image1 {
 		margin-left: 350px;
 	}
@@ -497,7 +489,7 @@ a {
 	}
 
 	div.logo {
-		margin-left: 10%;
+		margin-left: 4%;
 		display: flex;
 		gap: 10%;
 	}
@@ -520,6 +512,14 @@ a {
 	
 	div.contGame img.img1 {
 		margin-left: 780px;
+	}
+
+	div.conteudoJogos {
+		overflow: auto;
+	}
+
+	div.container-menu-mobile ul {
+		justify-content: space-evenly;
 	}
 
 	div.image1 {
@@ -962,7 +962,7 @@ input.pesquisaFocus::placeholder {
 
 .containerJogosEmAlta {
 	display: flex;
-	overflow: hidden;
+	overflow: auto;
 	gap: 10px;
 	align-items: center;
 	width: 95%;
@@ -978,43 +978,13 @@ input.pesquisaFocus::placeholder {
 	transition: 0.2s;
 }
 
+.reddead {
+	margin-left: 2500px;
+	transition: 1s;
+}
+
 .conteudoJogos {
 	display: flex;
-	overflow: auto;
-	scroll-behavior: smooth;
-	justify-content: center;
-	gap: 30px;
-	align-items: center;
-	width: 100%;
-	height: 65vh;
-	transition: 0.4s;
-}
-
-.conteudoJogos2 {
-	display: none;
-	overflow: auto;
-	scroll-behavior: smooth;
-	justify-content: center;
-	gap: 30px;
-	align-items: center;
-	width: 100%;
-	height: 65vh;
-	transition: 0.4s;
-}
-
-.conteudoJogos3 {
-	display: none;
-	overflow: auto;
-	scroll-behavior: smooth;
-	justify-content: center;
-	gap: 30px;
-	align-items: center;
-	width: 100%;
-	height: 65vh;
-}
-
-.conteudoJogos4 {
-	display: none;
 	overflow: hidden;
 	scroll-behavior: smooth;
 	justify-content: center;
@@ -1022,6 +992,7 @@ input.pesquisaFocus::placeholder {
 	align-items: center;
 	width: 100%;
 	height: 65vh;
+	transition: 0.4s;
 }
 
 .contGame {
@@ -1076,6 +1047,8 @@ input.pesquisaFocus::placeholder {
 }
 
 .botaoCarrousel {
+	margin-bottom: 80px;
+	height: 100%;
 	font-size: 1.2em;
 	width: 45px;
 	height: 45px;

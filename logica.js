@@ -24,34 +24,27 @@ function menuToggle() {
 	}
 }
 
-
-const contJogos = [
-  document.getElementById('contJogos0'),
-  document.getElementById('contJogos1'),
-  document.getElementById('contJogos2'),
-  document.getElementById('contJogos3')
-];
-
-let contador = 0;
-
+let cont1 = document.getElementById('carrosel1')
+let valor = 2500
+console.log(valor);
 function proximo() {
-  contJogos[contador].style.display = 'none';
-  contador = (contador + 1) % contJogos.length;
-  exibirConteinerAtual();
+	console.log(valor);
+	if(valor <= -2500){
+		valor = -2500
+	}else{
+		valor -= 1250
+	}
+	cont1.style.marginLeft = `${valor}px`
 }
 
 function voltar() {
-  contJogos[contador].style.display = 'none';
-  contador = (contador - 1 + contJogos.length) % contJogos.length;
-  exibirConteinerAtual();
+	console.log(valor);
+	if(valor >= 2500){
+		valor = 2500
+	}else{
+		valor += 1250
+	}
+	cont1.style.marginLeft = `${valor}px`
 }
 
-function exibirConteinerAtual() {
-  if (contador >= 3 && contJogos[3].style.display === 'none') {
-    contador = 0;
-  }
 
-  for (let i = 0; i < contJogos.length; i++) {
-    contJogos[i].style.display = i === contador ? 'flex' : 'none';
-  }
-}
