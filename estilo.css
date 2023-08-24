@@ -23,8 +23,17 @@ a {
 		transition: 1s;
 	}
 
+	div.reddead2 {
+		margin-left: 2240px;
+		transition: 1s;
+	}
+
 	div.conteudoJogos {
 		gap: 20px;
+	}
+
+	div.jg2 {
+		gap: 0px;
 	}
 
 	div.logo a img {
@@ -56,8 +65,17 @@ a {
 	}
 
 	div.reddead {
-		margin-left: 2100px;
+		margin-left: 2340px;
 		transition: 1s;
+	}
+
+	div.reddead2 {
+		margin-left: 2350px;
+		transition: 1s;
+	}
+
+	div.jg2 {
+		gap: 0px;
 	}
 
 	div.contGame {
@@ -107,6 +125,15 @@ a {
 		transition: 1s;
 	}
 
+	div.reddead2 {
+		margin-left: 2400px;
+		transition: 1s;
+	}
+
+	div.jg2 {
+		gap: 0px;
+	}
+
 	div.contGame {
 		display: flex;
 		flex-direction: column;	
@@ -135,7 +162,6 @@ a {
 	}
 
 	div.containerJogosEmAlta {
-
 		width: 98%;
 	}
 
@@ -167,6 +193,14 @@ a {
 
 @media (max-width:799px) and (min-width:621px){
 
+	div.reddead2 {
+		margin-left: 2600px;
+		transition: 1s;
+	}
+
+	div.jg2 {
+		gap: 0px;
+	}
 
 	div.contGameImg img {
 		width: 207px;
@@ -246,6 +280,15 @@ a {
 
 @media (max-width:620px) and (min-width:481px){
 	
+	div.reddead2 {
+		margin-left: 2750px;
+		transition: 1s;
+	}
+
+	div.jg2 {
+		gap: 0px;
+	}
+
 	div.conteudoJogos {
 		overflow: auto;
 		-webkit-overflow-scrolling: touch;
@@ -257,12 +300,9 @@ a {
 		display: none;
 	}
 
-	div.contGame img.img1 {
-		margin-left: 640px;
-	}
-
-	div.image1 {
-		margin-left: 320px;
+	div.reddead {
+		margin-left: 3100px;
+		transition: 1s;
 	}
 
 	div.pesquisaMb {
@@ -392,8 +432,22 @@ a {
 
 @media (max-width:480px) and (min-width:361px){
 
-	div.contGame img.img1 {
-		margin-left: 700px;
+	div.reddead {
+		margin-left: 3270px;
+		transition: 1s;
+	}
+
+	div.reddead2 {
+		margin-left: 2900px;
+		transition: 1s;
+	}
+
+	div.jg2 {
+		gap: 0px;
+	}
+
+	div.container-menu-mobile ul {
+		justify-content: space-evenly;
 	}
 
 	div.conteudoJogos {
@@ -405,10 +459,6 @@ a {
 
 	div.conteudoJogos::-webkit-scrollbar {
 		display: none;
-	}
-
-	div.image1 {
-		margin-left: 350px;
 	}
 
 	div.pesquisaMb {
@@ -538,8 +588,19 @@ a {
 
 @media (max-width:360px){
 	
-	div.contGame img.img1 {
-		margin-left: 780px;
+	div.reddead {
+		margin-left: 3310px;
+		transition: 1s;
+	}
+
+	div.reddead {
+		margin-left: 3270px;
+		transition: 1s;
+	}
+
+	div.reddead2 {
+		margin-left: 2900px;
+		transition: 1s;
 	}
 
 	div.conteudoJogos {
@@ -555,10 +616,6 @@ a {
 
 	div.container-menu-mobile ul {
 		justify-content: space-evenly;
-	}
-
-	div.image1 {
-		margin-left: 390px;
 	}
 
 	div.pesquisaMb {
@@ -1001,6 +1058,7 @@ input.pesquisaFocus::placeholder {
 	gap: 10px;
 	align-items: center;
 	width: 95%;
+	margin-bottom: 40px;
 }
 
 .titulo a {
@@ -1038,6 +1096,41 @@ input.pesquisaFocus::placeholder {
 	align-items: center;
 	border-radius: 6px;
 }
+
+/* sessão melhor nota */
+.contGame2 {
+	height: 80%;
+	display: flex;
+	flex: 0 0 250px;
+	flex-direction: column;
+	align-items: center;
+	border-radius: 6px;
+}
+
+.reddead2 {
+	margin-left: 2100px;
+	transition: 1s;
+}
+
+.jg2 {
+	gap: 0px;
+}
+
+.contGame2 .contGameImg {
+	width: 200px;
+	height: 263px;
+	margin-top: 10px;
+}
+
+.contGame2 .contGameImg img{
+	width: 200px;
+	height: 263px;
+	margin-top: 10px;
+	border-radius: 8px;
+	box-shadow: 0px 1px 5px black;
+}
+
+/* fim melhor nota */
 
 .contGame a {
 	display: flex;

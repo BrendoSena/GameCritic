@@ -47,4 +47,24 @@ function voltar() {
 	cont1.style.marginLeft = `${valor}px`
 }
 
+let cont2 = document.getElementById('carrosel2')
+let valor2 = 2100
+function proximo2() {
+	console.log(valor);
+	if(valor2 <= -2100){
+		valor2 = -2100
+	}else{
+		valor2 -= 1050
+	}
+	cont2.style.marginLeft = `${valor2}px`
+}
 
+function voltar2() {
+	console.log(valor2);
+	if(valor2 >= 2100){
+		valor2 = 2100
+	}else{
+		valor2 += 1050
+	}
+	cont2.style.marginLeft = `${valor2}px`
+}
