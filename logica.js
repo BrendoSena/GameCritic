@@ -68,3 +68,13 @@ function voltar2() {
 	}
 	cont2.style.marginLeft = `${valor2}px`
 }
+
+function randomTrailer() {
+	let iframe = document.getElementById('ytvideo')
+	let trailerDestaque = [ 'https://www.youtube.com/embed/gmA6MrX81z4?si=vHwxuyIbhcNFRUDx', 
+	'https://www.youtube.com/embed/zw47_q9wbBE?si=5o7-YFm3Fr9Up_zc', 
+	'https://www.youtube.com/embed/Lq594XmpPBg?si=fVgZIMBkxEwuzTKT']
+	let trailer = Math.floor(Math.random() * trailerDestaque.length)
+	let trailerURL = trailerDestaque[trailer]
+	iframe.src = trailerURL
+}

@@ -11,7 +11,7 @@
 	<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&display=swap" rel="stylesheet">
 	<script src="https://kit.fontawesome.com/9617228131.js" crossorigin="anonymous"></script>
 </head>
-<body>
+<body onload="randomTrailer()">
 	<header>
 		<div class="containerHead">
 			<div class="logo">
@@ -272,7 +272,7 @@
 			<div class="titulo">
 				<a href="#">Melhor nota</a>
 			</div>
-			<div class="containerJogosEmAlta">	
+			<div class="containerJogosEmAlta" style="margin-top: 0px;">	
 				<div class="botaoCarrousel">
 					<button onclick="voltar2()" class="carroselBtn prev"><i class="fa-solid fa-arrow-left"></i></button>
 				</div>
@@ -469,10 +469,10 @@
 			</div>
 			<!-- Mais bem avaliados fim -->
 			<div class="titulo">
-				<a href="#">Trailer em destaque</a>
+				<h4>Trailer em destaque</h4>
 			</div>
 			<div class="containerTrailer">
-				
+				<iframe id="ytvideo" src="https://www.youtube.com/embed/zw47_q9wbBE?si=BC1htKizP9xbs8wL" title="Zelda Breath of The Wild " frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 			</div>
 		</section>
 	</main>

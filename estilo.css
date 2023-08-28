@@ -1058,10 +1058,16 @@ input.pesquisaFocus::placeholder {
 	gap: 10px;
 	align-items: center;
 	width: 95%;
+	margin-top: 40px;
 	margin-bottom: 40px;
 }
 
 .titulo a {
+	color: #9B9B9B;
+	font-size: 2em;
+}
+
+.titulo h4 {
 	color: #9B9B9B;
 	font-size: 2em;
 }
@@ -1209,3 +1215,22 @@ img.imgGame {
 }
 
 /* fim sessão jogos em alta */
+
+/* sessão trailer */
+
+.containerTrailer {
+	display: flex;
+	margin-top: 40px;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 90%;
+}
+
+.containerTrailer iframe {
+	border-radius: 8px;
+	width: 90%;
+	height: 90vh;
+}
+
+/* fim trailer */
