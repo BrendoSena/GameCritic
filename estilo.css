@@ -120,6 +120,10 @@ a {
 		height: 270px;
 	}
 
+	div.containerTrailer {
+		height: 70vh;
+	}
+
 	div.reddead {
 		margin-left: 2400px;
 		transition: 1s;
@@ -196,6 +200,10 @@ a {
 	div.reddead2 {
 		margin-left: 2600px;
 		transition: 1s;
+	}
+
+	div.containerTrailer {
+		height: 60vh;
 	}
 
 	div.jg2 {
@@ -283,6 +291,10 @@ a {
 	div.reddead2 {
 		margin-left: 2750px;
 		transition: 1s;
+	}
+
+	div.containerTrailer {
+		height: 45vh;
 	}
 
 	div.jg2 {
@@ -437,6 +449,36 @@ a {
 		transition: 1s;
 	}
 
+	div.containerFooter {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-wrap: wrap;
+		height: 90%;
+		width: 100%;
+		font-size: 1.4em;
+		margin-bottom: 5px;
+	}
+
+	footer.footer {
+		height: 30vh;
+	}
+
+	div.containerFooter a {
+		padding: 0px;
+	}
+
+	div.links {
+		height: 100%;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-evenly;
+	}
+
+	div.containerTrailer {
+		height: 30vh;
+	}
+
 	div.reddead2 {
 		margin-left: 2900px;
 		transition: 1s;
@@ -588,6 +630,37 @@ a {
 
 @media (max-width:360px){
 	
+	div.containerFooter {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-wrap: wrap;
+		height: 90%;
+		width: 100%;
+		font-size: 1.4em;
+		margin-bottom: 5px;
+	}
+
+	footer.footer {
+		height: 30vh;
+	}
+
+	div.containerFooter a {
+		padding: 0px;
+	}
+
+	div.links {
+		height: 100%;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-evenly;
+	}
+
+	div.containerTrailer {
+		height: 30vh;
+	}
+
+
 	div.reddead {
 		margin-left: 3310px;
 		transition: 1s;
@@ -1224,13 +1297,53 @@ img.imgGame {
 	justify-content: center;
 	align-items: center;
 	width: 100%;
-	height: 90%;
+	height: 90vh;
 }
 
 .containerTrailer iframe {
 	border-radius: 8px;
 	width: 90%;
-	height: 90vh;
+	height: 100%;
 }
 
 /* fim trailer */
+
+/* footer */
+
+.footer {
+	display: flex;
+	flex-direction: column;
+	justify-content: end;
+	align-items: center;
+	margin-top: 150px;
+	height: 20vh;
+	width: 100%;
+	background: #151517;
+}
+
+.containerFooter {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	height: 90%;
+	width: 90%;
+	font-size: 1.5em;
+	margin-bottom: 5px;
+}
+
+.containerFooter a {
+	padding: 15px;
+	color: #9B9B9B;
+}
+
+.containerFooter a:hover {
+	color: #606060;
+	transition: 0.4s;
+}
+
+footer p {
+	color: white;
+	font-size: 0.7em;
+	text-transform: uppercase;
+}
